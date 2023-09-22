@@ -1,0 +1,9 @@
+# Start 3 containers from image that does not automatically exit, such as nginx, detached.
+docker run --name nginx_1 nginx
+docker run --name nginx_2 nginx
+docker run --name nginx_3 nginx
+docker ps
+
+# Stop 2 of the containers leaving 1 up.
+docker stop nginx_1 nginx_2
+docker ps
