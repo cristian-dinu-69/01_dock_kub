@@ -1,0 +1,25 @@
+# docker run image_name
+# override the default command
+## docker run image_name command
+## docker run busybox - nothing
+## docker run busybox echo hi there
+## docker run busybox ls
+# docker ps - list all running containers
+## docker run busybox ping google.ro
+## docker ps --all
+# container lifecycle
+## docker create hello-world
+## docker start -a sweet_keldysh
+### -a attach - attach and print it out
+### exited - can be started with docker start container
+# prune
+## docker system prune
+# retrieve logs
+## we are not re-running the container - access the logs only
+
+# docker stop command 10 dec then kill
+# docker kill command
+
+# multi-command container
+# docker run redis
+
