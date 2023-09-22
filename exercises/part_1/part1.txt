@@ -47,3 +47,26 @@ This is the readme, use input "basics" to complete this exercise.
 Read the Dockerfile and/or docs to learn what input will get the application to answer a “secret message”.
 
 Submit the secret message and command(s) given to get it as your answer.
+
+# 1.4
+# Now that we’ve warmed up it’s time to get inside a container while it’s running!
+
+# Start image devopsdockeruh/exec_bash_exercise, it will start a container with clock-like features and create a log. 
+# Go inside the container and use tail -f ./logs.txt to follow the logs. Every 15 seconds the clock will send you a “secret message”.
+docker run --name exerc devopsdockeruh/exec_bash_exercise
+
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+
+docker exec -it exerc sh
+tail -f ./logs.txt
+
+"Docker is easy"
+
+# Submit the secret message and command(s) given as your answer.
