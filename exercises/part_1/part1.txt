@@ -70,3 +70,23 @@ tail -f ./logs.txt
 "Docker is easy"
 
 # Submit the secret message and command(s) given as your answer.
+
+# 1.5
+# Start a ubuntu image with the process tree
+
+# docker run -d -it --name nimi ubuntu Will create you the container.
+docker run -d -it --name nimi ubuntu
+
+# docker exec -it <nimi> tree Will run the tree program and display the output.
+
+docker exec -it <nimi> tree
+
+# OCI runtime exec failed: exec failed: container_linux.go:346: starting container process caused "exec: \"tree\": executable file not found in $PATH": unknown Something is obviously broken. Maybe Tree is missing?
+
+# docker exec -it <nimi> bash In to the container and fix the problem. Exit the container, leaving it running.
+
+docker exec -it <nimi> bash
+
+# Now run the tree command again from the command-line.
+
+# For the following exercises, return both Dockerfile(s) and the command you used to run the container(s)
